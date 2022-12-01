@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat | MentalHealthcare</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="chatstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function validate(){
+    
+            if( document.myForm.Name.value == "" ) {
+                alert( "Please provide your name!" );
+                document.myForm.Name.focus() ;
+                return false;
+            }
+            if( document.myForm.Email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.Email.focus() ;
+            return false;
+         }
+         if( document.myForm.Phone.value == "" || isNaN( document.myForm.Phone.value ) ||
+            document.myForm.Phone.value.length != 10 ) {
+            
+            alert( "Please provide a phone number in the format 01xxxxxxxx." );
+            document.myForm.Phone.focus() ;
+            return false;
+         }
+         else{
+            alert("Thank you for your response! We will contact you soon. :)");
+            return(true);
+         }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="depression_test.html">Depression test</a></li>
+            </ul>
+            <h2 class="logo"><a href="index.html">Mental Healthcare</a></h2>
+            <ul>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="chat.html"><i style="font-size:24px" class="fa">&#xf27b;</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>You are not alone, leave us your details and local help will contact you.</p>
+    <img src="dep7.jpg" alt="chat" style="width: 35%;">
+    <form id="survey-form" name="myForm" onsubmit="return(validate());">
+        <table>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input type="text" placeholder="Name" name="Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    <input type="radio" name="Gender"> Male
+                    <input type="radio" name="Gender"> Female
+                    <input type="radio" name="Gender"> Prefer Not to Say
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="mail" placeholder="someone@example.com" name="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone no :
+                </td>
+                <td>
+                    <input type="Phone" placeholder="01xxxxxxxx" name="Phone">
+                </td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td><input type = "submit" value = "Submit" /></td>
+             </tr>
+        </table>
+    </form>
+    
+    <!-- <button class="button" type="button" onclick="alert('Thank you for your response! Your result will be sent to your email.')">Submit</button> -->
+    <footer>
+        So Many Suffer Alone. Let's send love today to every person who is battling depression.
+    </footer>
+</body>

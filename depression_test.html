@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Depression test | Mental Healthcare</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="teststyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+            
+        function checkForm() {
+            
+            let chosenOption1 = "";
+            let chosenOption2 = "";
+            let chosenOption3 = "";
+            let chosenOption4 = "";
+            let chosenOption5 = "";
+            let chosenOption6 = "";
+            let chosenOption7 = "";
+            let chosenOption8 = "";
+            let chosenOption9 = "";
+            
+            const len1 = document.userForm.Q1.length; // question 1
+            const len2 = document.userForm.Q2.lenght; // question 2
+            const len3 = document.userForm.Q3.length; // question 3 
+            const len4 = document.userForm.Q4.lenght; // question 4
+            const len5 = document.userForm.Q5.length; // question 5
+            const len6 = document.userForm.Q6.lenght; // question 6
+            const len7 = document.userForm.Q7.length; // question 7
+            const len8 = document.userForm.Q8.lenght; // question 8
+            const len9 = document.userForm.Q9.length; // question 9
+            
+            // question 1
+            for (i = 0; i < len1; i++) {
+                if (document.userForm.Q1[i].checked) {
+                    chosenOption1 = document.userForm.Q1[i].value;
+                }
+            }
+            // question 2
+            for (i = 0; i < len2; i++) {
+                if (document.userForm.Q2[i].checked) {
+                    chosenOption2 = document.userForm.Q2[i].value;
+                }
+            }
+            // question 3
+            for (i = 0; i < len3; i++) {
+                if (document.userForm.Q3[i].checked) {
+                    chosenOption3 = document.userForm.Q3[i].value;
+                }
+            }
+            // question 4
+            for (i = 0; i < len4; i++) {
+                if (document.userForm.Q4[i].checked) {
+                    chosenOption4 = document.userForm.Q4[i].value;
+                }
+            }
+            // question 5
+            for (i = 0; i < len5; i++) {
+                if (document.userForm.Q5[i].checked) {
+                    chosenOption5 = document.userForm.Q5[i].value;
+                }
+            }
+            // question 6
+            for (i = 0; i < len6; i++) {
+                if (document.userForm.Q6[i].checked) {
+                    chosenOption6 = document.userForm.Q6[i].value;
+                }
+            }
+            // question 7
+            for (i = 0; i < len7; i++) {
+                if (document.userForm.Q7[i].checked) {
+                    chosenOption7 = document.userForm.Q7[i].value;
+                }
+            }
+            // question 8
+            for (i = 0; i < len8; i++) {
+                if (document.userForm.Q8[i].checked) {
+                    chosenOption8 = document.userForm.Q8[i].value;
+                }
+            }
+            // question 9
+            for (i = 0; i < len9; i++) {
+                if (document.userForm.Q9[i].checked) {
+                    chosenOption9 = document.userForm.Q9[i].value;
+                }
+            }
+            
+            if (chosenOption1 == "") {
+                alert("Please answer all the required question.");
+                return false;
+            } else {
+                alert("Thank you for your response! Your result will be send to your email.");
+                return true;
+            }
+        }
+</script>  
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <h2 class="logo"><a href="depression_test.html">Depression Test</a></h2>
+            <ul>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="chat.html"><i style="font-size:24px" class="fa">&#xf27b;</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="survey-form" name="myForm" onsubmit="return(validate());">
+        <img src="dep5.jpg" alt="Agitated Girl" style=background-size:contain; height="200px">
+        <div>
+            <div class="question">
+                <label>1. Little interest or pleasure in doing things</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q1" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q1" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q1" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q1" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>2. Feeling down, depressed or hopeless</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q2" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q2" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q2" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q2" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>3. Trouble falling or staying asleep, or sleeping too much</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q3" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q3" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q3" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q3" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>4. Feeling tired or having little energy</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q4" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q4" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q4" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q4" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>5. Poor appetite or overeating</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q5" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q5" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q5" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q5" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q6" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q6" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q6" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q6" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>7. Trouble concentrating on things, such as reading the newspaper or watching television</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q7" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q7" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q7" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q7" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>8. Moving or speaking so slowly that other people could have noticed 
+                    Or the oppositie - being so fidgety or restless that you have been moving around a lot more than usual
+                </label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q8" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q8" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q8" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q8" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>9. Thoughts that you would be better off dead, or of hurting yourself</label>
+            </div>
+            <div class="answer">
+                <input type="radio" name="Q9" value="Not At All">
+                <label>Not At All</label>
+                <input type="radio" name="Q9" value="Several Days">
+                <label>Several Days</label>
+                <input type="radio" name="Q9" value="More Than Half The Days">
+                <label>More Than Half The Days</label>
+                <input type="radio" name="Q9" value="Nearly Every Day">
+                <label>Nearly Every Day</label>
+            </div>
+        </div>
+        <button class="button" type="submit" onclick="alert('Thank you for your response! Your result will be sent to your email.')">Submit</button> 
+    </form>
+    <footer>
+        So Many Suffer Alone. Let's send love today to every person who is battling depression.
+    </footer>
+</body>
+
+</html>

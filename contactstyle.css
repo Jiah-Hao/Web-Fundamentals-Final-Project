@@ -1,0 +1,121 @@
+*{
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 95vh;
+    background: #f2f2f2;
+    font-family: sans-serif;
+    color: #000000;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #cc0066;
+    padding: 2em 0 2em 0;
+    color: white;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.logo{
+    font-family: cursive;
+    font-size: 40px;
+}
+
+nav a:hover{
+    color: lightgoldenrodyellow;
+    transition: .3s;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family:  cursive;
+    color: white
+}
+    
+nav ul li a:hover{
+    color: lightgoldenrodyellow;
+    transition: .3s;
+} 
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.left{
+    background: #ff6699;
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+main{
+    flex: 5 5 150px;
+    text-align: center;
+}
+
+.right{
+    background: #ff6699;
+    padding: 3em 0 3em 0;
+    flex: 1 1 100px;
+}
+
+footer{
+    background: #cc0066;
+    padding: 1em 0 1em 0;
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+
+main ul li{
+    text-align: justify;
+}
+
+@media all and (max-width: 500px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+}
+
+.content{
+    display: block;
+    width: 350px;
+    height: 600px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    font-size: medium;
+    font-family: cursive;
+    float: left;
+    border-top: 7px solid;
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
